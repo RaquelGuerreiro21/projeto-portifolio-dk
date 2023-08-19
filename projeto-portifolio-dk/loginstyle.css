@@ -1,0 +1,281 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   
+   font-size: 100%;
+   background-image: url(Back.jpg);
+   background-size: cover;
+
+}
+
+.Nexus {
+   width: 124px;
+   height: 48px;
+   top: 46px;
+   left: 100px;
+   font-family: Inter;
+   font-size: 40px;
+   letter-spacing: 0cm;
+   text-align: left;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   padding: 10px 20px;
+}
+
+.logo{
+   font-size: 24px;
+}
+
+.nav {
+   display: flex;
+   align-items:flex-end;
+   top: 65px;
+   gap: 35px;
+   color: #FFFFFF;
+   font-family: Inter;
+}
+
+.nav a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+   transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.nav a:hover {
+   transform: scale(1.1);
+}
+
+.nav a::after {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: white;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: transform 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+   transform: scaleX(1);
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+
+.login-button {
+   background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   width: 50px;
+   height: 29px;
+   top: 75px;
+   left: 30px;
+   gap: 30px;
+   border-radius: 10px;
+}
+
+.login-button:hover {
+   transform: scale(1.1);
+   background-color: white;
+   color: black;
+}
+
+.login-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   background-position: center;
+   min-height: 80vh;
+   
+   
+
+}
+
+.login-box {
+   background-color: rgba(176, 233, 227, 0.146);
+   padding: 50px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   text-align: center;
+   backdrop-filter: blur(10px);
+   border-color: #FFFFFF;
+   height: 450px;
+   box-sizing: border-box;
+   border: 2px solid white; /* Adicione uma borda branca */
+   border-radius: 10px; /* Adicione bordas arredondadas */
+   
+}
+
+.login-title{
+   top: 257px;
+   left: 677px;
+   font-family: inter;
+   font-size: 32px;
+   font-weight: 600;
+   line-height: 39px;
+   letter-spacing: 0;
+   color: #164938;
+   margin: 0 0 20;
+}
+
+.input-container {
+   position: relative;
+    margin-bottom: 45px;
+}
+
+.input-container input {
+   width: 329px;
+   height: 46px;
+   padding: 10px;
+   border: none;
+   border-bottom: 1px solid #202020;
+   background-color: transparent;
+   outline: none;
+}
+
+.input-container i {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   color: black;
+}
+
+.botaodeentrar {
+   background-color: #128581b1;
+   color: #DBDBDB;
+   padding: 8px 140px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   top: 500px;
+}
+
+.options {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+   color: #474545;
+   height: 30px;
+   font-family: inter;
+   font-size: small;
+   size: 30px;
+}
+
+.forgot-password {
+   color:#474545;
+   margin-left: auto; 
+   font-size: small;
+}
+
+.register{
+   color:#474545;
+   text-decoration: none;
+   margin-left: auto;
+   font-family: inter;
+}
+
+.Cadastre-se{
+   color:#474545;
+   font-family: inter;
+   font-size: small;
+}
+
+.salvarlogin{
+   color:#474545;
+    font-family: inter;
+    font-size: small;
+}
+
+.close-button {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   background-color:#474545;
+   color:#FFFFFF;
+   border: none;
+   font-size: 30px;
+   line-height: 0;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 5px; /* Adicione um valor de border-radius para criar bordas arredondadas */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px; /* Ajuste a largura do botão */
+   height: 30px; /* Ajuste a altura do botão */
+   
+}
+
+@media (max-width: 767px) {
+
+   body {
+      
+      font-size: 100%;
+      background-image: url(Back.jpg);
+      background-size: cover;
+   
+   }
+   .login-container {
+      min-height: 100vh; /* Ajuste a altura do container para ocupar a altura total da tela */
+      margin-top: 0; /* Remova a margem superior */
+   }
+
+   .login-box {
+      padding: 12px; /* Ajuste o padding para o conteúdo dentro do container */
+      box-sizing: border-box;
+      border: 2px solid white; /* Adicione uma borda branca */
+       border-radius: 10px; /* Adicione bordas arredondadas */
+      
+   }
+
+   .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-color:#474545;
+      color:#FFFFFF;
+      border: none;
+      font-size: 30px;
+      line-height: 0;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px; /* Adicione um valor de border-radius para criar bordas arredondadas */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px; /* Ajuste a largura do botão */
+      height: 30px; /* Ajuste a altura do botão */
+      
+   }
+
+
+}
+
+
+   

@@ -1,0 +1,215 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   font-size: 100%;
+   background-image: url(Back.jpg);
+   background-size: cover;
+
+}
+
+.Nexus {
+   width: 124px;
+   height: 48px;
+   top: 46px;
+   left: 100px;
+   font-family: Inter;
+   font-size: 40px;
+   letter-spacing: 0cm;
+   text-align: left;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   padding: 10px 20px;
+}
+
+.logo{
+   font-size: 24px;
+}
+
+.nav {
+   display: flex;
+   align-items:flex-end;
+   top: 65px;
+   gap: 35px;
+   color: #FFFFFF;
+   font-family: Inter;
+}
+
+.nav a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+   transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.nav a:hover {
+   transform: scale(1.1);
+}
+
+.nav a::after {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: white;
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: transform 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+   transform: scaleX(1);
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+
+}
+
+.login-button {
+   background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   width: 50px;
+   height: 29px;
+   top: 65px;
+   left: 30px;
+   gap: 30px;
+   border-radius: 10px;
+}
+
+.login-button:hover {
+   transform: scale(1.1);
+   background-color: white;
+   color: black;
+}
+
+p {
+   font-family: inter;
+   
+   text-align: center;
+
+}
+
+.about-section {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px 10px 10px;
+   text-align: center;
+}
+
+.about-container {
+   backdrop-filter: blur(10px);
+   background-color: rgba(35, 234, 208, 0.16);
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   padding: 100px;
+   max-width: 400px;
+   margin:50px auto 0;
+   top: 194px;
+   left: 485px;
+   
+
+}
+
+.profile img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 20px;
+}
+
+
+
+.social-links {
+   margin-top: 20px;
+}
+
+.social-links a {
+   margin-right: 10px;
+}
+
+.social-links img {
+   width: 30px;
+   height: 30px;
+}
+
+.nossasredes {
+   font-family: inter;
+   color: #FFFFFF;
+}
+.close-button {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   background-color:#474545;
+   color:#FFFFFF;
+   border: none;
+   font-size: 30px;
+   line-height: 0;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 5px; /* Adicione um valor de border-radius para criar bordas arredondadas */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px; /* Ajuste a largura do botão */
+   height: 30px; /* Ajuste a altura do botão */
+   
+}
+
+
+@media (max-width: 767px) {
+   .about-container {
+       top: 25000px;
+       max-width: 100%; 
+       padding: 60px; 
+   }
+
+   .profile img {
+       width: 100px; 
+       height: 100px;
+   }
+
+   .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-color:#474545;
+      color:#FFFFFF;
+      border: none;
+      font-size: 30px;
+      line-height: 0;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px; /* Adicione um valor de border-radius para criar bordas arredondadas */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px; /* Ajuste a largura do botão */
+      height: 30px; /* Ajuste a altura do botão */
+      
+   }
+}

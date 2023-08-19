@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Nexus - Cadastre-se</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registrostyle.css">
+    <link rel="stylesheet" href="mobile-menu.css"> 
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="Nexus">Nexus</div>
+        <div class="logo"></div>
+        <div class="menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="mobile-menu-list"> 
+            <a href="home.html">Home</a>
+            <a href="login.html" target="_blank" rel="external">Serviços</a>
+            <a href="https://nexusart.myportfolio.com/" target="_blank" rel="external">Contato</a>
+            <a href="sobre.html" target="_blank" rel="external">Sobre</a>
+        </nav>
+        <div class="container">
+            <a href="login.html" target="_blank" rel="external"><button id="loginButton" class="login-button">Login</button></a>
+        </div>
+    </header>
+    
+    
+    <script src="mobile-menu.js"></script> 
+    <section class="about-section">
+        <div class="about-container">
+            
+        <div class="login-container">
+            <div class="login-box">
+                <h2 class="login-title">Registro</h2>
+                    <form>
+                        <button class="close-button">X</button>
+                    <div class="input-container"> 
+                         
+                            <input type="Nome" id="Nome" name="Nome" placeholder="Nome" required>
+                            <i class="fas fa-envelope fa-lock"></i>
+                    </div>
+                    
+                    <div class="input-container">  
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <i class="fas fa-envelope fa-lock"></i>
+                    </div>
+
+                    <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="options">
+                        <label><input type="checkbox" name="remember" class="termos">Concordo com os termos e condições.</label></div>
+
+                    <button type="submit" id="criarconta" class="criarconta"><strong>Criar conta</strong></button>
+         <div class="options"></div>
+
+         <div class="register">
+            Já tem uma conta?<strong><a href="login.html" class="Cadastre-se"> Faça login. </a></strong>
+        </div>
+         
+            </form>
+                </div>
+                    </div>
+
+</body>
+<script>
+    const closeButton = document.querySelector('.close-button');
+    closeButton.addEventListener('click', () => {
+        window.location.href = 'home.html'; // Substitua 'home.html' pela URL da sua página de home
+    });
+</script>
+</html>

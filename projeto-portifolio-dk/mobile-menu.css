@@ -1,0 +1,55 @@
+/* mobile-menu.css */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+    margin-right: 250px; 
+   
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 3px 0;
+    
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav {
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+        position: absolute;
+        top: 60px;
+        right:230px; 
+        width: 130px;
+        border: 2px solid white;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        z-index: 2500;
+    }
+    .nav.active {
+        display: flex;
+    }
+
+    body {
+        background-size: 1500px;
+    }
+
+    .Nexus {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: auto;
+        font-size: 0;
+        
+    }
+
+}

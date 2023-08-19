@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Nexus - Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sobrestyle.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="Nexus">Nexus</div>
+        <div class="logo"></div>
+        <div class="menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="mobile-menu-list"> 
+            <a href="home.html">Home</a>
+            <a href="login.html" target="_blank" rel="external">Serviços</a>
+            <a href="https://nexusart.myportfolio.com/" target="_blank" rel="external">Contato</a>
+            <a href="sobre.html" target="_blank" rel="external">Sobre</a>
+        </nav>
+        <div class="container">
+            <a href="login.html" target="_blank" rel="external"><button id="loginButton" class="login-button">Login</button></a>
+        </div>
+    </header>
+    
+
+    
+    <script src="mobile-menu.js"></script> 
+<section class="about-section">
+        <div class="about-container">
+
+            <button class="close-button">X</button>
+            <div class="profile">
+                <img src="Ellipse 1.png" alt="Foto de perfil">
+            </div>
+            <div class="description">
+                <strong>
+                    <p>Sou Derik, responsável pela Nexus, somos uma agência de designer, que atua com social media, web designer, gestão de trafego e edição para vídeos. Gostou desse projeto? Entre em contato e vamos dar vida á sua ideia e alavancar os seus resultados!!!</p>
+                </strong>
+                <div class="social-links">
+                    <strong>
+                        <div class="nossasredes">Nossas redes:</div>
+                    </strong>
+                    <a href="https://www.tiktok.com/@nexus_art?_t=8el8zgv6mKE&_r=1"><img src="Tik tok.png" alt="TikTok"></a>
+                    <a href="https://www.instagram.com/nexus_artt/"><img src="Insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="Whatsapp.png" alt="WhatsApp"></a>
+                
+                </div
+</div>
+            </div>
+        
+        
+</div>
+    </section>
+</body>
+<script>
+    const closeButton = document.querySelector('.close-button');
+    closeButton.addEventListener('click', () => {
+        window.location.href = 'home.html'; // Substitua 'home.html' pela URL da sua página de home
+    });
+</script>
+</html>
